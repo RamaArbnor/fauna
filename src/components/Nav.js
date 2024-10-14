@@ -11,6 +11,7 @@ const Nav = () => {
             <ul className='nav-list'>
                 <li className='nav-item' onClick={() => navigate('/')}>Home</li>
                 <li className='nav-item' onClick={() => navigate('/references')}>References</li>
+                <li className='nav-item' onClick={() => navigate('/species')}>Speciet</li>
             </ul>
         </div>
     );
