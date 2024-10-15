@@ -42,7 +42,7 @@
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Creates a responsive grid */
   gap: 20px;
   padding: 20px;
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -51,7 +51,8 @@
   position: relative;
   /* border: 1px solid #ccc; */
   border-radius: .5rem;
-  padding: 10px 0;
+
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
 .species-item:hover{
