@@ -5,7 +5,7 @@ import App from './App';
 import References from './components/References';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter , Routes , Route} from 'react-router-dom'
-import Species from './components/Species';
+import Family from './components/Family';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,7 +14,7 @@ root.render(
       <Routes>
         <Route exact path="/" element={<App />} />
         <Route path="/references" element={<References />} />
-        <Route path="/species" element={<Species />} />
+        <Route path="/families/:name" element={<Family />} exact />
         
 
       </Routes>
