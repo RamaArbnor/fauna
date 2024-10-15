@@ -17,7 +17,7 @@
 .nav-item{
     color: white;
     height: 100%;
-    font-size: 1rem;
+    font-size: 1.2rem;
     cursor: pointer;
     transition: color 0.3s;
     /* margin: 0 -2px; */

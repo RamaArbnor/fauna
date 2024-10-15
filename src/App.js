@@ -7,21 +7,21 @@ import { useState } from 'react';
 function App() {
 
   const [species, setSpecies] = useState([
-    'Austropotamobius torrentium (Foto: Halil Ibrahimi)',
-    'Eresus kollari (Foto: Donard Geci)',
-    'Philaeus chrysops (Foto: Donard Geci)',
-    'Potamophylax coronavirus (Foto: Halil Ibrahimi)',
-    'Potamophylax kosovaensis (Foto: Halil Ibrahimi)',
-    'Rosalia alpina (Foto: Halil Ibrahimi)',
-    'Barbus balcanicus (Foto: Stamatis Zogaris)',
-    'Cobitis elongatoides (Foto: Stamatis Zogaris)',
-    'Salmo truto (Foto: Stamatis Zogaris)',
-    'Ichthyosaura alpestris (Foto: Donard Geci)',
-    'Zamenis situla (Foto: Donard Geci)',
-    'Testudo hermani (Foto: Krenare Ibrahimi &amp; Blertina Islami)',
-    'Motacilla alba (Foto: Donard Geci)',
-    'Lanois collurno (Foto: Donard Geci)',
-    'Rhinolophus ferrumequinum (Foto: Donard Geci)'
+    'Austropotamobius torrentium (Foto: Halil Ibrahimi',
+    'Eresus kollari (Foto: Donard Geci',
+    'Philaeus chrysops (Foto: Donard Geci',
+    'Potamophylax coronavirus (Foto: Halil Ibrahimi',
+    'Potamophylax kosovaensis (Foto: Halil Ibrahimi',
+    'Rosalia alpina (Foto: Halil Ibrahimi',
+    'Barbus balcanicus (Foto: Stamatis Zogaris',
+    'Cobitis elongatoides (Foto: Stamatis Zogaris',
+    'Salmo truto (Foto: Stamatis Zogaris',
+    'Ichthyosaura alpestris (Foto: Donard Geci',
+    'Zamenis situla (Foto: Donard Geci',
+    'Testudo hermani (Foto: Krenare Ibrahimi & Blertina Islami',
+    'Motacilla alba (Foto: Donard Geci',
+    'Lanois collurno (Foto: Donard Geci',
+    'Rhinolophus ferrumequinum (Foto: Donard Geci'
   ]);
 
   // New state for modal
@@ -57,12 +57,15 @@ function App() {
             const imageName = require(`./pics/foto/${specie.split(" ")[0]} ${specie.split(" ")[1]}.jpg`);
             return (
               <div key={index} className="species-item">
+                <p className='tag'>{specie.split('(')[1]}</p>
                 <img 
                   src={imageName} 
                   alt={specie} 
                   onClick={() => handleImageClick(imageName)} // Handle image click
                 />
-                <h3>{specie}</h3>
+                <div className='name'>
+                  <p>{specie.split('(')[0]}</p>
+                </div>
               </div>
             );
           })}

@@ -7,7 +7,7 @@
 
 .hero{
   text-align: center;
-  background-image: url('./pics/hero.jpg');
+  background-image: url('./pics/hero2.jpg');
   background-size: cover;
   background-position: center;
   height: 50vh;
@@ -15,7 +15,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-filter: brightness(20%);
   
 }
 
@@ -48,8 +48,10 @@
 
 .species-item{
   text-align: center;
-  border: 1px solid #ccc;
-  padding: 10px;
+  position: relative;
+  /* border: 1px solid #ccc; */
+  border-radius: .5rem;
+  padding: 10px 0;
 }
 
 .species-item:hover{
@@ -61,6 +63,7 @@
 .species-item img{
   width: 100%;
   height: 300px;
+  border-radius: 1rem 1rem 0 0;
   /* object-fit: cover; */
 }
 
@@ -95,6 +98,27 @@
   margin: .3rem 0rem;
 }
 
+.tag {
+  position: absolute;
+  left: -6px;
+  top: -4px;
+  color: #ffffff;
+  padding: .4rem;
+  background-color: green;
+  border-radius: .2rem;
+}
+
+.name {
+  background-color: #333;
+  color: white;
+  padding: .2rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
 @media (max-width: 768px) {
   .species {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -103,6 +127,7 @@
   .species-item img{
     height: 200px;
   }
+  
 
   .hero h1{
     font-size: 3rem;
