@@ -6,6 +6,7 @@ import References from './components/References';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter , Routes , Route} from 'react-router-dom'
 import Family from './components/Family';
+import Error from './components/Error'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,8 +16,7 @@ root.render(
         <Route exact path="/" element={<App />} />
         <Route path="/references" element={<References />} />
         <Route path="/families/:name" element={<Family />} exact />
-        
-
+        <Route path="*" element={<Error />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
