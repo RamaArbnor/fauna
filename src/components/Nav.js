@@ -23,7 +23,7 @@ const Nav = () => {
                     onMouseEnter={() => dropdownRef.current.style.display = 'block'} 
                     onMouseLeave={() => dropdownRef.current.style.display = 'none'}
                 >
-                    Famiiljet {'>'}
+                    Grupet shtazore {'>'}
                     <ul 
                         ref={dropdownRef} 
                         style={{ display: 'none', position: 'absolute', backgroundColor: '#333', color: 'white', padding: '10px', borderRadius: '5px' }}
