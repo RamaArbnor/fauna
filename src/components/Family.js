@@ -29,7 +29,7 @@ export default function Family() {
                 skipEmptyLines: true,
                 complete: (results) => {
                     setData(results.data); // Set the parsed data
-                    console.log(results.data);
+                    // console.log(results.data);
                 },
             });
         };
@@ -60,7 +60,11 @@ export default function Family() {
                                 {data.length > 0 && data[0].hasOwnProperty('Klasa') && <td>{item.Klasa}</td>}
                                 <td>{item.Rendi}</td>
                                 <td>{item.Familja}</td> 
-                                <td>{item.Lloji}</td>
+                                <td>
+                                    <span>
+                                        <i style={{fontFamily: 'Times-New-Roman'}}>{item.Lloji.split(' ').slice(0, -2).join(' ')}</i> {item.Lloji.split(' ').slice(-2).join(' ')}
+                                    </span>
+                                </td>
                                 <td>{item.Referenca}</td>
 
                             </tr>

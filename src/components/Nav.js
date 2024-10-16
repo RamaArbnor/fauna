@@ -8,17 +8,16 @@ const Nav = () => {
     const dropdownRef = React.useRef(null); // Create a ref for the dropdown
 
     const families = [
-        'Amfibet dhe Reptilet', 'Coleoptera', 'Ephemeroptera', 
-        'Gjitaret', 'Hemiptera Diptera Mecoptera', 'Lepidoptera', 
-        'Merimangat', 'Odonata', 'Pakurrizoret tjerë', 
-        'Peshqit', 'Plecoptera', 'Shpendet', 'Trichoptera'
+        'Merimangat', 'Ephemeroptera', 'Odonata', 'Plecoptera', 'Trichoptera',
+        'Lepidoptera', 'Coleoptera', 'Hemiptera Diptera Mecoptera', 'Pakurrizoret tjerë', 
+        'Peshqit', 'Amfibet dhe Reptilet', 'Shpendet', 'Gjitaret'    
     ];
 
     return (
         <div className='nav-bar'>
             <ul className='nav-list'>
                 <li className='nav-item' onClick={() => navigate('/')}>Home</li>
-                <li className='nav-item' onClick={() => navigate('/references')}>References</li>
+                <li className='nav-item' onClick={() => navigate('/references')}>Referencat</li>
                 <li 
                     className='nav-item' 
                     onMouseEnter={() => dropdownRef.current.style.display = 'block'} 
