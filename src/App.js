@@ -44,7 +44,7 @@ function App() {
         <div className="hero">
           <h1>Fauna of Kosovo</h1>
           <p>
-            Fauna Kosovarica është një listë e të gjitha llojeve të kafshëve që
+            Fauna of Kosovo është një listë e të gjitha llojeve të kafshëve që
             gjenden në Republikën e Kosovës. Kjo platformë do të përditësohet
             çdo vit me gjetjet e reja, duke siguruar që informacioni të jetë
             gjithmonë i saktë dhe i përditësuar. Deri më tani, janë regjistruar
