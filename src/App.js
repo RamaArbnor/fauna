@@ -42,7 +42,7 @@ function App() {
       <Nav />
       <div className="content">
         <div className="hero">
-          <h1>Fauna Kosovarica</h1>
+          <h1>Fauna of Kosovo</h1>
           <p>
             Fauna Kosovarica është një listë e të gjitha llojeve të kafshëve që
             gjenden në Republikën e Kosovës. Kjo platformë do të përditësohet
