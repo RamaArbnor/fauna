@@ -21,7 +21,7 @@ function App() {
     'Testudo hermanni (Foto: Krenare Ibrahimi & Blertina Islami',
     'Motacilla alba (Foto: Donard Geci',
     'Lanius collurio (Foto: Donard Geci',
-    'Rhinolophus ferrumequinum (Foto: Donard Geci'
+    'Rhinolophus hipposideros (Foto: Donard Geci'
   ]);
 
   // New state for modal
