@@ -15,12 +15,12 @@ function App() {
     'Rosalia alpina (Foto: Halil Ibrahimi',
     'Barbus balcanicus (Foto: Stamatis Zogaris',
     'Cobitis elongatoides (Foto: Stamatis Zogaris',
-    'Salmo truto (Foto: Stamatis Zogaris',
+    'Salmo trutta (Foto: Stamatis Zogaris',
     'Ichthyosaura alpestris (Foto: Donard Geci',
     'Zamenis situla (Foto: Donard Geci',
-    'Testudo hermani (Foto: Krenare Ibrahimi & Blertina Islami',
+    'Testudo hermanni (Foto: Krenare Ibrahimi & Blertina Islami',
     'Motacilla alba (Foto: Donard Geci',
-    'Lanois collurno (Foto: Donard Geci',
+    'Lanius collurio (Foto: Donard Geci',
     'Rhinolophus ferrumequinum (Foto: Donard Geci'
   ]);
 
